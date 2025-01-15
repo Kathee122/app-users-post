@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-
+//Metodo que obtiene todos los post que ha hecho cada usuario de la api
 const postData = (userId) => {
     const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
         const fetchPosts = async () => {
@@ -12,13 +13,16 @@ const postData = (userId) => {
                 setPosts(response.data); 
             } catch (error) {
                 console.error('Error fetching posts:', error);
+            }finally{
+                setLoading(false)
             }
+
         };
 
         fetchPosts();
-    }, [userId]); // Asegúrate de que el hook se ejecute cuando userId cambie
+    }, [userId]); 
 
-    return posts;
+    return {posts,loading};
 };
 
 export default postData;

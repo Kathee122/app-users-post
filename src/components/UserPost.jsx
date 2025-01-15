@@ -1,13 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import postData from '../hooks/postData';
-import img_publicacion from '../assets/images/publicacion.jpg'
 import Navbar from './Navbar';
+import Loading from './Loading';
 
 const UserPost = () => {
-    const { userId } = useParams(); // Obtener userId de la URL
-    const posts = postData(userId); // Pasar userId al hook
+    const { userId } = useParams(); // se Obtiene el userId de la URL
+    const {posts,loading} = postData(userId); // Pasamos userId al hook
 
+    //condicionando la carga de datos
+    if(loading) return <Loading/>
     return (
       <>
         <Navbar />

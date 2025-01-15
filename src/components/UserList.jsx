@@ -1,12 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import userData from '../hooks/UserData';
+import userData from '../hooks/userData';
 import img_user from '../assets/images/usuario.png'
 import Navbar from './Navbar';
+import Loading from './Loading';
 
 const UserList = () => {
-    const users = userData(); // Usa el hook para obtener datos
+    const {users,loading} = userData(); // se usa el hook para obtener datos
 
+    //condicionando la carga de datos
+    if(loading) return <Loading/>
     return (
         <>
             <Navbar />
