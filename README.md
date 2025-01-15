@@ -10,10 +10,23 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
    cd <NOMBRE_DEL_REPOSITORIO>
    ```
 
-2. **Instalar dependencias**
-   Una vez tengas Node.js y npm instalados, ejecutamos:
+2. **Instalación dependencias**
+   - Instalamos Node.js
+   ejecutamos el siguiente comando:
    ```bash
    npm install
+   ```
+
+   - Instalamos axios
+   ejecutamos el siguiente comando:
+   ```bash
+   npm install axios
+   ```
+
+   - Instalamos Bootstrap 5.3
+   ejecutamos el siguiente comando:
+   ```bash
+   npm install bootstrap@5.3.3
    ```
 
 3. **Iniciar el servidor de desarrollo**
