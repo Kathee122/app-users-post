@@ -1,0 +1,20 @@
+nav{
+    background-color: #002f34;
+    color: #fff;
+    padding: 1rem;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1rem;
+
+    & :hover{
+        color: #009ea4;
+    }
+}
+
+.link{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+}

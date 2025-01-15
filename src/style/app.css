@@ -1,0 +1,34 @@
+.title{
+    color: #40288a;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn-post{
+    border: 1px solid #009ea4;
+    color: #009ea4;
+}
+
+.btn:hover{
+    border: 1px solid #009ea4;
+    color: #086167;
+}
+
+.btn-users{
+    background-color: #7e6ae8;
+    color: #fff;
+}
+
+.card-post{
+    border: 1px solid #00578d;
+}
+
+.card-title{
+    color: #00578d;
+}
+
+.description{
+    color: #009ea4;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
