@@ -10,7 +10,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
    cd <NOMBRE_DEL_REPOSITORIO>
    ```
 
-2. **Instalación dependencias**
+2. **Instalación de dependencias**
    - Instalamos Node.js
    ejecutamos el siguiente comando:
    ```bash
@@ -30,7 +30,7 @@ Para ejecutar este proyecto, sigue los siguientes pasos:
    ```
 
 3. **Iniciar el servidor de desarrollo**
-   Una vez instaladas las dependencias, inicia el servidor de desarrollo con:
+   - Una vez instaladas las dependencias, corremos el proyecto con el siguiente comando:
    ```bash
    npm run dev
    ```
